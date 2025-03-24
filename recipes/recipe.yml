@@ -7,7 +7,7 @@ description: This is a cool dsitro trust me.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: quay.io/fedora/fedora-silverblue
-image-version: 42
+image-version: rawhide
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -22,6 +22,8 @@ modules:
       - epiphany
     remove:
       - ptyxis
+      - gnome-connections
+      - gnome-contacts
       - gnome-maps
       - gnome-logs
       - yelp
