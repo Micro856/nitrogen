@@ -18,6 +18,8 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: rpm-ostree
+    install:
+      - epiphany
     remove:
       - ptyxis
       - gnome-connections
@@ -32,18 +34,12 @@ modules:
       - loupe
       - snapshot
       - baobab
-
-  - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      install:
-      remove:
-    user: {} # Also add Flathub user repo, but no user packages
+      - firefox
+      - firefox-langpacks
 
   - type: script
     scripts:
-        - terminalless.sh 
+      - terminalless.sh 
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
