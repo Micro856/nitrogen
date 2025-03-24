@@ -30,10 +30,6 @@ modules:
       - gnome-tour
       - mediawriter
       - gnome-extensions-app
-      - gnome-calculator
-      - loupe
-      - snapshot
-      - baobab
       - firefox
       - firefox-langpacks
 
