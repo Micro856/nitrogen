@@ -27,7 +27,6 @@ modules:
       - yelp
       - gnome-tour
       - mediawriter
-      - gnome-extensions-app
       - firefox
       - firefox-langpacks
 
