@@ -22,7 +22,6 @@ modules:
       - epiphany
     remove:
       - ptyxis
-      - gnome-contacts
       - gnome-maps
       - gnome-logs
       - yelp
