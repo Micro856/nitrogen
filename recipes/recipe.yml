@@ -22,7 +22,6 @@ modules:
       - epiphany
     remove:
       - ptyxis
-      - gnome-connections
       - gnome-contacts
       - gnome-maps
       - gnome-logs
