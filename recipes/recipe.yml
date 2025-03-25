@@ -45,7 +45,6 @@ modules:
       - gnome-tour
       - firefox
       - firefox-langpacks
-      - flatpak
 
   - type: script
     scripts:
