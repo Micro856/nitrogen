@@ -19,7 +19,7 @@ modules:
 
   - type: rpm-ostree
     install:
-      - gnome-claculator
+      - gnome-calculator
       - gnome-calendar
       - gnome-characters
       - evince
