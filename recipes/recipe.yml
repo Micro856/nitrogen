@@ -19,19 +19,37 @@ modules:
 
   - type: rpm-ostree
     install:
-      - flatpak
+      - gnome-claculator
+      - gnome-calendar
+      - gnome-characters
+      - evince
+      - loupe
+      - sushi
+      - snapshot
+      - gnome-text-editor
+      - gnome-weather
+      - baobab
+      - gnome-clocks
+      - gnome-font-viewer
+      - gnome-disk-utility
+      - epiphany
+      - gnome-shell-extension-common
+      - gnome-shell-extension-apps-menu
+      - gnome-shell-extension-launch-new-instance
+      - gnome-shell-extension-places-menu
+      - gnome-shell-extension-window-list
+      - gnome-shell-extension-background-logo
     remove:
       - ptyxis
       - yelp
       - gnome-tour
-      - mediawriter
       - firefox
       - firefox-langpacks
+      - flatpak
 
   - type: script
     scripts:
       - terminalless.sh
-      - flatpaks.sh
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
