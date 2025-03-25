@@ -46,9 +46,5 @@ modules:
       - firefox
       - firefox-langpacks
 
-  - type: script
-    scripts:
-      - terminalless.sh
-
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
