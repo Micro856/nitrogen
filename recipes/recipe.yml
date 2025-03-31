@@ -35,5 +35,32 @@ modules:
       - gnome-shell-extension-background-logo
       - gnome-classic-session
 
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    system:
+      # If no repo information is specified, Flathub will be used by default
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+      install:
+        - org.gnome.Calculator
+        - org.gnome.Calendar
+        - org.gnome.Characters
+        - org.gnome.Papers
+        - org.gnome.Loupe
+        - org.gnome.Snapshot
+        - org.gnome.TextEditor
+        - org.gnome.Weather
+        - org.gnome.baobab
+        - org.gnome.clocks
+        - org.gnome.font-viewer
+        - org.gnome.Epiphany
+        - com.mattjakeman.ExtensionManager
+        - page.tesk.Refine
+        - io.bassi.Amberol
+        - org.libreoffice.LibreOffice
+    user:
+      repo-name: flathub
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
